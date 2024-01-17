@@ -59,5 +59,14 @@ func main ()  {
 		D = "jishnu"
 	)
 		fmt.Printf("%d\n%d\n%s\n",B,C,D)
-	
-}
+
+	var I = 7
+	var txt ="text"
+	fmt.Printf("%v\n",I)
+	fmt.Printf("%#v\n",i)
+	fmt.Printf("%T\n",I)
+
+	fmt.Printf("%v\n",txt)
+	fmt.Printf("%#v\n",txt)
+	fmt.Printf("%T\n",txt)
+}	
