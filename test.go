@@ -69,4 +69,14 @@ func main ()  {
 	fmt.Printf("%v\n",txt)
 	fmt.Printf("%#v\n",txt)
 	fmt.Printf("%T\n",txt)
+
+	var ab int = 5
+	var myText = "Text"
+	var boo bool = true
+	var fl float32 = 54444.45
+	fmt.Println(ab)
+	fmt.Println(myText)
+	fmt.Println(boo)
+	fmt.Println(fl)
+
 }	
