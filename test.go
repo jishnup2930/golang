@@ -48,5 +48,10 @@ func main ()  {
 	fmt.Println("The out put should be zero",j)
 	fmt.Println(k)
 
+	const A int = 5  //typed constants
+	fmt.Println(A)
+	const PI =3.14 //un typed constants
+	fmt.Println("The PI value is ",PI)
+
 
 }
