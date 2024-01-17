@@ -79,4 +79,7 @@ func main ()  {
 	fmt.Println(boo)
 	fmt.Println(fl)
 
+	var x float64 =1.6e+308
+	fmt.Printf("Type: %T,value:%v \n",x,x)
+
 }	
