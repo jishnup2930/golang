@@ -35,4 +35,10 @@ func main ()  {
 	fmt.Println("This is three",cc)
 	fmt.Println("This is four",dd)
 
+	var num,str =6,"Six"
+	fmt.Println("This is number",num)
+	fmt.Println("This is string",str)
+
+
+
 }
