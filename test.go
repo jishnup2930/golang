@@ -53,5 +53,11 @@ func main ()  {
 	const PI =3.14 //un typed constants
 	fmt.Println("The PI value is ",PI)
 
-
+	const (
+		B = 1
+		C int=6
+		D = "jishnu"
+	)
+		fmt.Printf("%d\n%d\n%s\n",B,C,D)
+	
 }
