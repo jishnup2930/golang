@@ -28,4 +28,11 @@ func main ()  {
 	fmt.Println(a)
 	fmt.Println(b)
 	fmt.Println(c)
+
+	var aa,bb,cc,dd int = 1,2,3,4
+	fmt.Println("This is one",aa)
+	fmt.Println("This is two",bb)
+	fmt.Println("This is three",cc)
+	fmt.Println("This is four",dd)
+
 }
