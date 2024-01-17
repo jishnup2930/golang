@@ -39,6 +39,14 @@ func main ()  {
 	fmt.Println("This is number",num)
 	fmt.Println("This is string",str)
 
+	var(
+		i int = 5
+		j int  
+		k string ="This is string"
+	)
+	fmt.Println("The out put is five",i)
+	fmt.Println("The out put should be zero",j)
+	fmt.Println(k)
 
 
 }
