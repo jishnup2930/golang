@@ -82,4 +82,15 @@ func main ()  {
 	var x float64 =1.6e+308
 	fmt.Printf("Type: %T,value:%v \n",x,x)
 
+	var arr =[3]int{1,2,3}
+	car := [...]string{"BMW","AUDI","Innova","Porshe"}
+	fmt.Println(arr)
+	fmt.Println(car)
+	fmt.Println(car[2])
+
+	car[2] ="Ferrari"
+	fmt.Println(car)
+
+	fmt.Println(len(car))
+
 }	
