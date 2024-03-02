@@ -114,4 +114,13 @@ func main ()  {
 	slice2:=append(myslice,10,20,30)
 	fmt.Println(slice2)
 
+	//operators
+	var a = 10+10
+	var sum = a +20
+	var sum1 = sum+a
+	fmt.Println(sum1)
+
+	
+
+
 }	
