@@ -109,6 +109,9 @@ func main ()  {
 	fmt.Printf("length = %d\n", len(arr))
 	fmt.Printf("capacity = %d\n", cap(arr))
 
-
+	slice[2]=6
+	fmt.Println(slice)
+	slice2:=append(myslice,10,20,30)
+	fmt.Println(slice2)
 
 }	
