@@ -124,4 +124,13 @@ func main ()  {
 	fmt.Println("Comparison operator",a<sum)
 	fmt.Println(a==sum)
 
+
+	if sum>a{
+	fmt.Println("Sum is greater than a ")
+	}
+	x:=10
+	y:=39
+	if x<y{
+		fmt.Println("x is smaller than y")
+	}
 }	
