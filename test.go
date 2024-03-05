@@ -140,4 +140,12 @@ func main ()  {
 	}else{
 		fmt.Println("Time is greater than 18")
 	}
+
+	if time<10{
+		fmt.Println("Morning")
+	}else if time<20{
+		fmt.Println("After noon")
+	}else {
+		fmt.Println("Evening")
+	}
 }	
