@@ -133,4 +133,11 @@ func main ()  {
 	if x<y{
 		fmt.Println("x is smaller than y")
 	}
+	time:=20
+	if time<18{
+		fmt.Println("Time is less than 18")
+		
+	}else{
+		fmt.Println("Time is greater than 18")
+	}
 }	
