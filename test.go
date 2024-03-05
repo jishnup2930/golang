@@ -120,7 +120,8 @@ func main ()  {
 	var sum1 = sum+a
 	fmt.Println(sum1)
 
-	
-
+	fmt.Println("Comparison operator",a>sum)
+	fmt.Println("Comparison operator",a<sum)
+	fmt.Println(a==sum)
 
 }	
