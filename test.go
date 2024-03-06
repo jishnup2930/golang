@@ -1,6 +1,6 @@
 package  main
 import "fmt"
-func main ()  {
+func one ()  {
 	// fmt.Println("hi")
 	// var intNum int = 3215
 	// intNum = intNum+1
@@ -187,4 +187,13 @@ func main ()  {
 		fmt.Printf("%v\n", idx)
 	}
 	}
+
 	}	
+
+func two(){
+	fmt.Println("The function one is executed")
+}
+func main(){
+	one()
+	two()
+}
