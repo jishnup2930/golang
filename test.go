@@ -109,6 +109,68 @@ func main ()  {
 	fmt.Printf("length = %d\n", len(arr))
 	fmt.Printf("capacity = %d\n", cap(arr))
 
+	slice[2]=6
+	fmt.Println(slice)
+	slice2:=append(myslice,10,20,30)
+	fmt.Println(slice2)
+
+	//operators
+	var a = 10+10
+	var sum = a +20
+	var sum1 = sum+a
+	fmt.Println(sum1)
+
+	fmt.Println("Comparison operator",a>sum)
+	fmt.Println("Comparison operator",a<sum)
+	fmt.Println(a==sum)
 
 
+	if sum>a{
+	fmt.Println("Sum is greater than a ")
+	}
+	x:=10
+	y:=39
+	if x<y{
+		fmt.Println("x is smaller than y")
+	}
+	time:=20
+	if time<18{
+		fmt.Println("Time is less than 18")
+		
+	}else{
+		fmt.Println("Time is greater than 18")
+	}
+
+	if time<10{
+		fmt.Println("Morning")
+	}else if time<20{
+		fmt.Println("After noon")
+	}else {
+		fmt.Println("Evening")
+	}
+
+	var number int
+
+	fmt.Println("Enter a number between 1 and 5")
+	fmt.Scanln(&number)
+	switch number {
+	case 1:
+		fmt.Println("The number is one")
+	case 2:
+		fmt.Println("The number is two")
+	case 3:
+		fmt.Println("The number is three")
+	case 4:
+		fmt.Println("The number is four")
+	case 5:
+		fmt.Println("The number is five")
+	default:
+		fmt.Println("Number is out of range")
+	}
+	switch number{
+	case 1,3,5:
+		fmt.Println("The number is odd")
+	case 2,4:
+		fmt.Println("The number is even")
+	}
 }	
