@@ -149,28 +149,42 @@ func main ()  {
 		fmt.Println("Evening")
 	}
 
-	var number int
+	// var number int
 
-	fmt.Println("Enter a number between 1 and 5")
-	fmt.Scanln(&number)
-	switch number {
-	case 1:
-		fmt.Println("The number is one")
-	case 2:
-		fmt.Println("The number is two")
-	case 3:
-		fmt.Println("The number is three")
-	case 4:
-		fmt.Println("The number is four")
-	case 5:
-		fmt.Println("The number is five")
-	default:
-		fmt.Println("Number is out of range")
+	// fmt.Println("Enter a number between 1 and 5")
+	// fmt.Scanln(&number)
+	// switch number {
+	// case 1:
+	// 	fmt.Println("The number is one")
+	// case 2:
+	// 	fmt.Println("The number is two")
+	// case 3:
+	// 	fmt.Println("The number is three")
+	// case 4:
+	// 	fmt.Println("The number is four")
+	// case 5:
+	// 	fmt.Println("The number is five")
+	// default:
+	// 	fmt.Println("Number is out of range")
+	// }
+	// switch number{
+	// case 1,3,5:
+	// 	fmt.Println("The number is odd")
+	// case 2,4:
+	// 	fmt.Println("The number is even")
+	// }
+	for i:=1;i<=5;i++{
+		fmt.Println(i)
 	}
-	switch number{
-	case 1,3,5:
-		fmt.Println("The number is odd")
-	case 2,4:
-		fmt.Println("The number is even")
+	var adj =[2]string{"Tasty","Big"}
+	var fruits =[3]string{"apple","orange","banana"}
+	for i:=0; i<len(adj); i++{
+		for j:=0; j<len(fruits); j++{
+			fmt.Println(adj[i],fruits[j])
+		}
+	fruits := [3]string{"apple", "orange", "banana"}
+	for idx,_ := range fruits {
+		fmt.Printf("%v\n", idx)
 	}
-}	
+	}
+	}	
