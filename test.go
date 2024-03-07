@@ -193,7 +193,14 @@ func one ()  {
 func two(){
 	fmt.Println("The function one is executed")
 }
+func name(fname string){
+	fmt.Println("Hello",fname)
+}
 func main(){
 	one()
 	two()
+	fname:=[2]string{"jishnu","nandana"}
+	for i:=0;i<len(fname);i++{
+		name(fname[i])
+	}
 }
