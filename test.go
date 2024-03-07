@@ -182,9 +182,9 @@ func one ()  {
 		for j:=0; j<len(fruits); j++{
 			fmt.Println(adj[i],fruits[j])
 		}
-	fruits := [3]string{"apple", "orange", "banana"}
-	for idx,_ := range fruits {
-		fmt.Printf("%v\n", idx)
+	// fruits := [3]string{"apple", "orange", "banana"}
+	for val:= range fruits {
+		fmt.Printf("%v\n", val)
 	}
 	}
 
@@ -196,6 +196,15 @@ func two(){
 func name(fname string){
 	fmt.Println("Hello",fname)
 }
+
+func three(fname string , age int){
+	fmt.Println("Name:",fname,"Age:",age)
+}
+func add(x int,y int)(result int){
+	result=x + y
+	return
+}
+
 func main(){
 	one()
 	two()
@@ -203,4 +212,6 @@ func main(){
 	for i:=0;i<len(fname);i++{
 		name(fname[i])
 	}
+	three("Jishnu",27)
+	fmt.Println(add(45,5))
 }
