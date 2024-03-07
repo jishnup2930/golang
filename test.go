@@ -1,6 +1,6 @@
 package  main
 import "fmt"
-func main ()  {
+func one ()  {
 	// fmt.Println("hi")
 	// var intNum int = 3215
 	// intNum = intNum+1
@@ -149,28 +149,76 @@ func main ()  {
 		fmt.Println("Evening")
 	}
 
-	var number int
+	// var number int
 
-	fmt.Println("Enter a number between 1 and 5")
-	fmt.Scanln(&number)
-	switch number {
-	case 1:
-		fmt.Println("The number is one")
-	case 2:
-		fmt.Println("The number is two")
-	case 3:
-		fmt.Println("The number is three")
-	case 4:
-		fmt.Println("The number is four")
-	case 5:
-		fmt.Println("The number is five")
-	default:
-		fmt.Println("Number is out of range")
+	// fmt.Println("Enter a number between 1 and 5")
+	// fmt.Scanln(&number)
+	// switch number {
+	// case 1:
+	// 	fmt.Println("The number is one")
+	// case 2:
+	// 	fmt.Println("The number is two")
+	// case 3:
+	// 	fmt.Println("The number is three")
+	// case 4:
+	// 	fmt.Println("The number is four")
+	// case 5:
+	// 	fmt.Println("The number is five")
+	// default:
+	// 	fmt.Println("Number is out of range")
+	// }
+	// switch number{
+	// case 1,3,5:
+	// 	fmt.Println("The number is odd")
+	// case 2,4:
+	// 	fmt.Println("The number is even")
+	// }
+	for i:=1;i<=5;i++{
+		fmt.Println(i)
 	}
-	switch number{
-	case 1,3,5:
-		fmt.Println("The number is odd")
-	case 2,4:
-		fmt.Println("The number is even")
+	var adj =[2]string{"Tasty","Big"}
+	var fruits =[3]string{"apple","orange","banana"}
+	for i:=0; i<len(adj); i++{
+		for j:=0; j<len(fruits); j++{
+			fmt.Println(adj[i],fruits[j])
+		}
+	// fruits := [3]string{"apple", "orange", "banana"}
+	for val:= range fruits {
+		fmt.Printf("%v\n", val)
 	}
-}	
+	}
+
+	}	
+
+func two(){
+	fmt.Println("The function one is executed")
+}
+func name(fname string){
+	fmt.Println("Hello",fname)
+}
+
+func three(fname string , age int){
+	fmt.Println("Name:",fname,"Age:",age)
+}
+func add(x int,y int)(result int){
+	result=x + y
+	return
+}
+func multipleReturn(x int,y string)(result int,text string){
+	result = x*x
+	text = y+"World"
+	return
+
+}
+
+func main(){
+	one()
+	two()
+	fname:=[2]string{"jishnu","nandana"}
+	for i:=0;i<len(fname);i++{
+		name(fname[i])
+	}
+	three("Jishnu",27)
+	fmt.Println(add(45,5))
+	fmt.Println(multipleReturn(4,"Hello"))
+}
