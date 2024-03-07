@@ -204,6 +204,12 @@ func add(x int,y int)(result int){
 	result=x + y
 	return
 }
+func multipleReturn(x int,y string)(result int,text string){
+	result = x*x
+	text = y+"World"
+	return
+
+}
 
 func main(){
 	one()
@@ -214,4 +220,5 @@ func main(){
 	}
 	three("Jishnu",27)
 	fmt.Println(add(45,5))
+	fmt.Println(multipleReturn(4,"Hello"))
 }
