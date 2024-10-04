@@ -1,8 +1,11 @@
 package main
 
-import "log"
+import (
+	"fmt"
+	"log"
+)
 
-func main(){
+func userProfile(){
 	// for i:= 0; i <=10; i++{
 		// log.Println(i)
 	// }
@@ -24,4 +27,35 @@ func main(){
 		log.Println(l.firstName,l.lastName,l.email,l.age)
 	}
 	
+}
+func loop(){
+	for i:=0; i<5; i++{
+		fmt.Println(i)
+	}
+}
+
+func numbers(){
+	numbers:=[2] int {100,101}
+	fmt.Println(numbers)
+	for _,v:= range numbers{
+	fmt.Println(v)}
+}
+
+func MAP(){
+	letters :=map[string]string{
+		"a":"A",
+		"b":"B",
+	}
+	for key,value := range letters{
+		fmt.Println(key,value)
+
+	}
+}
+
+func main(){
+	userProfile()
+	loop()
+	numbers()
+	MAP()
+
 }
